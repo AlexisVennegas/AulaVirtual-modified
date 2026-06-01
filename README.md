@@ -45,4 +45,4 @@ Cualquier Alumno la puede descargar y poder cambiar su interfaz y poder ver la i
 
 ![Personalización](./AulaVirtualPlus/images/pruebas.gif)
 ```bash
-git clone https://github.com/tuusuario/aula-virtual-plus.git
+git clone https://github.com/AlexisVennegas/AulaVirtual-modified
