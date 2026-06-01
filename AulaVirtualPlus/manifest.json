@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Aula Virtual Plus",
+  "version": "1.0.0",
+  "description": "Mejora la experiencia de Aula Virtual de la Comunidad de Madrid",
+
+"permissions": [
+  "storage",
+  "identity",
+  "tabs"
+],
+"host_permissions": [
+  "https://aulavirtual.educa.madrid.org/*",
+  "https://aulavirtual33.educa.madrid.org/*",
+  "https://*.supabase.co/*"
+],
+
+"content_scripts": [
+  {
+    "matches": [
+      "https://aulavirtual.educa.madrid.org/*",
+      "https://aulavirtual33.educa.madrid.org/*"
+    ],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }
+],
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png"
+    }
+  },
+
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*", "assets/*"],
+      "matches": ["https://aulavirtual.educa.madrid.org/*"]
+    }
+  ]
+}
