@@ -1,4 +1,4 @@
-const SUPABASE_PROJECT_URL = "https://drboqldiaisibyohgluy.supabase.co";
+const SUPABASE_PROJECT_URL = "";
 
 function getMoodleUserId() {
   const el = document.querySelector("[data-userid]");
